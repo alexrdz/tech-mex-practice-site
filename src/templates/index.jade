@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width")
+    meta(name="msapplication-TileColor" content="#253952")
+    meta(name="theme-color" content="#253952")
+    meta(name="url" content="http://tech-mex.io/")
+    meta(name="identifier-URL" content="http://tech-mex.io/")
+    meta(name="description" content="Tech-Mex provides modern Web Design & Development for artists, small businesses and other good people.")
+    meta(name="subject" content="Modern Web Design & Development in El Paso, Laredo, and Austin, Texas")
+
+    link(rel="stylesheet", href="css/main.css")
+
+    title
+      | Tech-Mex - Modern Web Design &amp; Development - El Paso, Laredo, Austin
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-97916994-1', 'auto'); ga('send', 'pageview');
+  body
+    main.page_wrapper
+      //- include components/menu/01--desktop
+
+      include components/covers/13
+
+      include components/covers/18
+
+      include components/testimonials/06
+
+      include components/about/03
+
+      footer.footer
+        .container.footer__container
+          a.footer__logo_box.footer__logo_box--07.js-scroll-to-top(href="#")
+            img.footer__logo(src="img/etc/tech-mex-logo.svg")
+
+  
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfh_GTuZk_GKM0YwY-RQ7OBs6sAMcBGUg", defer)
+  script(src="js/main.js", defer)
+
+  .js-overlay.js-close-navigation.js-close-menu.overlay
